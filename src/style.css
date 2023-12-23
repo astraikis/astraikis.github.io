@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Commit Mono;
+  src: url("./assets/CommitMono-700-Regular.otf") format("opentype");
+}
+
+body {
+  font-family: monospace;
+}
+
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+}
