@@ -1,0 +1,68 @@
+/*
+Jackson Astraikis
+CSC 300X-01
+January 22, 2024
+Styles for pie.html
+*/
+
+body {
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: "Georgia", "Garamond", sans-serif;
+}
+
+h1, h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+a {
+    color: #A4A400;
+}
+
+li {
+    list-style-image: url("./assets/pie_icon.gif");
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#copyright {
+    font-family: monospace;
+    text-align: right;
+    width: fit-content;
+    block-size: fit-content;
+}
+
+.quote {
+    margin-left: 50px;
+    background-color: #FFFFA8;
+    font-style: italic;
+}
+
+#info {
+    white-space: pre-line;
+}
+
+.sublist-start {
+    list-style: none;
+}
