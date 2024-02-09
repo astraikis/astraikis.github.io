@@ -149,6 +149,15 @@ button {
 
 /* Media queries */
 
+@media (max-width: 700px) {
+    .meal-plan-container {
+        display: block;
+    }
+    .meal-plan-half {
+        width: 100%;
+    }
+}
+
 @media (max-width: 900px) {
     .article-container {
         display: block;
