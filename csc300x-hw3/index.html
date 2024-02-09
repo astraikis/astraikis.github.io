@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>On Campus Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+        <h1>On Campus Food</h1>
+        <a href="meal-plan.html">Meal plan</a>
+    </nav>
+
+    <header>
+        <h1 class="mb-2">Welcome to On Campus Food!</h1>
+
+        <p>
+            Eating well on campus can be tough! Thankfully you don't have
+            to rely on vending machine food and packed lunches. There are plenty
+            of options both on and near campus, but my suggestions focus on
+            Trade St. Its proximity to the Petty building as well as the diversity
+            in dining options makes it a standout for me. I hope you're hungry!
+        </p>
+    </header>
+
+    <main>
+        <h1 class="mb-1">Restaurants</h1>
+
+        <section>
+            <article>
+                <div class="article-container">
+                    <div class="article-left">
+                        <h2>Sushi Republic</h2>
+                        <p>Delicious and afforable sushi restaurant just steps from campus.</p>
+                        <ul>
+                            <li>329 Tate St, Greensboro, NC 27403-2521</li>
+                            <li>+1 336 274 6684</li>
+                        </ul>
+                        <h3>Hours</h3>
+                        <ul>
+                            <li>Mon	11:30 AM–2:30 PM & 5–10:30 PM</li>
+                            <li>Tue	11:30 AM–2:30 PM & 5–10:30 PM</li>
+                            <li>Wed	11:30 AM–2:30 PM & 5–10:30 PM</li>
+                            <li>Thu	11:30 AM–2:30 PM & 5–10:30 PM</li>
+                            <li>Fri	11:30 AM–2:30 PM & 5–10:30 PM</li>
+                            <li>Sat	5–10:30 PM</li>
+                            <li>Sun Closed</li>
+                        </ul>
+                    </div>
+                    <aside class="article-right">
+                        <h2 class="mb-1">Recommendations</h2>
+                        <div class="img-row">
+                            <img src="./images/sushi.jpg" alt="Sushi" id="sushi" onclick="onImgClick('sushiRepublic', 'sushi')">
+                            <img src="./images/gyoza.jpg" alt="Gyoza" id="gyoza" onclick="onImgClick('sushiRepublic', 'gyoza')">
+                            <img src="./images/oreos.jpg" alt="Fried oreos" id="oreos" onclick="onImgClick('sushiRepublic', 'oreos')">
+                        </div>
+                        <div>
+                            <div class="img-text-container" id="sushi-text">
+                                <h2 class="mb-1">Sushi</h2>
+                                <h3>$4-30</h3>
+                                <p>There are tons of great sushi options whether you want a platter, a few classic rolls, or some cooked rolls. I'd recommend the salmon nigiri or the eel avocado roll.</p>
+                                <a href="https://www.yelp.com/biz_photos/sushi-republic-greensboro?select=nkBl5EQD-IcLibchjUIuJw" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                            <div class="img-text-container" id="gyoza-text">
+                                <h2 class="mb-1">Pork Gyozas</h2>
+                                <h3>$7</h3>
+                                <p>Six dumplings either pan fried or steamed. A great little appetizer that goes great with any of the entree options.</p>
+                                <a href="https://www.yelp.com/biz_photos/sushi-republic-greensboro?select=WRLzkrmJ4vCKTS-wXDq_hg" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                            <div class="img-text-container" id="oreos-text">
+                                <h2 class="mb-1">Oreo Tempura</h2>
+                                <h3>$3.50</h3>
+                                <p>Three fried Oreos with whipped cream and chocolate sauce. Delicious, decadent, and very afforable!</p>
+                                <a href="https://www.yelp.com/biz_photos/sushi-republic-greensboro?select=Dr5LWl2SmMu30c_cmuzIyg" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-container">
+                    <div class="article-left">
+                        <h2>Slices Pizza by Tony</h2>
+                        <p>Quick and tasty pizza with all the toppings you'd expect.</p>
+                        <ul>
+                            <li>401 Tate St, Greensboro, NC 27403-2523</li>
+                            <li>+1 336 378 1932</li>
+                        </ul>
+                        <h3>Hours</h3>
+                        <ul>
+                            <li>Mon	10:30 AM–10:30 PM</li>
+                            <li>Tue	10:30 AM–10:30 PM</li>
+                            <li>Wed	10:30 AM–10:30 PM</li>
+                            <li>Thu 10:30 AM–10:30 PM</li>
+                            <li>Fri	10:30 AM–11 PM</li>
+                            <li>Sat	10:30 AM–11 PM</li>
+                            <li>Sun Closed</li>
+                        </ul>
+                    </div>
+                    <aside class="article-right">
+                        <h2 class="mb-1">Recommendations</h2>
+                        <div class="img-row">
+                            <img src="./images/pizza.jpg" alt="Pizza" id="pizza" onclick="onImgClick('slicesPizza', 'pizza')">
+                            <img src="./images/garlic.jpg" alt="Garlic" id="garlic" onclick="onImgClick('slicesPizza', 'garlic')">
+                            <img src="./images/nutella.jpg" alt="Nutella rolls" id="nutella" onclick="onImgClick('slicesPizza', 'nutella')">
+                        </div>
+                        <div>
+                            <div class="img-text-container" id="pizza-text">
+                                <h2 class="mb-1">Pepperoni Pizza</h2>
+                                <h3>$11.99</h3>
+                                <p>A classic starting at a great price. If pepperoni's not your thing, they've got tons of other topping choices.</p>
+                                <a href="https://www.yelp.com/biz_photos/slices-pizza-by-tony-greensboro?select=3PysA_uGG2igqOHVJi5_uA" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                            <div class="img-text-container" id="garlic-text">
+                                <h2 class="mb-1">Garlic Knots</h2>
+                                <h3>$5.99</h3>
+                                <p>Crispy, garlic-y goodness is always a must have when you're getting pizza.</p>
+                                <a href="https://www.yelp.com/biz_photos/slices-pizza-by-tony-greensboro?select=QgBnp4leentB6Azy9RjseQ" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                            <div class="img-text-container" id="nutella-text">
+                                <h2 class="mb-1">Nutella Rolls</h2>
+                                <h3>$3.99</h3>
+                                <p>Homemade pizza dough rolled up with nutella and covered in powdered sugar.</p>
+                                <a href="https://www.yelp.com/biz_photos/slices-pizza-by-tony-greensboro?select=67nV5SemJU49s4d8PFVk6A" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-container">
+                    <div class="article-left">
+                        <h2>Jimmy John's</h2>
+                        <p>Classic sandwich shop loved around the country.</p>
+                        <ul>
+                            <li>411 Tate St, Greensboro, NC 27403-2523</li>
+                            <li>+1 336 370 9997</li>
+                        </ul>
+                        <h3>Hours</h3>
+                        <ul>
+                            <li>Mon	10:30 PM-1 AM</li>
+                            <li>Tue	10:30 PM-1 AM</li>
+                            <li>Wed	10:30 PM-1 AM</li>
+                            <li>Fri	10:30 PM-1 AM</li>
+                            <li>Sat	10:30 PM-1 AM</li>
+                            <li>Sun 10:30 PM-1 AM</li>
+                        </ul>
+                    </div>
+                    <aside class="article-right">
+                        <h2 class="mb-1">Recommendations</h2>
+                        <div class="img-row">
+                            <img src="./images/caesar.jpg" alt="Caesar wrap" id="caesar" onclick="onImgClick('jimmyJohns', 'caesar')">
+                            <img src="./images/italian.jpg" alt="Italian sandwich" id="italian" onclick="onImgClick('jimmyJohns', 'italian')">
+                            <img src="./images/cookie.jpg" alt="Chocolate chip cookie" id="ccookie" onclick="onImgClick('jimmyJohns', 'ccookie')">
+                        </div>
+                        <div>
+                            <div class="img-text-container" id="caesar-text">
+                                <h2 class="mb-1">Chicken Caesar Wrap</h2>
+                                <h3>$9.95</h3>
+                                <p>A classic chicken caesar salad wrapped up in a garlic-herb wrap.</p>
+                                <a href="" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                            <div class="img-text-container" id="italian-text">
+                                <h2 class="mb-1">Spicy East Coast Italian</h2>
+                                <h3>$8.75</h3>
+                                <p>Salami, capocollo, provolone, and Jimmy peppers. Just spicy enough to keep it interesting.</p>
+                                <a href="" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                            <div class="img-text-container" id="ccookie-text">
+                                <h2 class="mb-1">Chocolate Chip Cookie</h2>
+                                <h3>$1.95</h3>
+                                <p>Delicious, crispy chocolate chip cookie to cap off your meal.</p>
+                                <a href="" target="_blank" rel="noopener noreferrer">Image source</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© Jackson Astraikis 2024</p>
+    </footer>
+	<script src="index.js"></script>
+  </body>
+</html>

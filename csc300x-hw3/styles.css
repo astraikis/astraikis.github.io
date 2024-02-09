@@ -1,0 +1,166 @@
+:root {
+    --grey: #e5e5e5;
+    --dark-grey: #292524;
+    --purple: #5b21b6;
+    --red: #be123c;
+    --radius: 5px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--grey);
+    margin: 0;
+}
+
+/* Utility classes */
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.my-4 {
+    margin: 4rem 0;
+}
+
+header {
+    padding: 4rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    padding: 0 4rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav h1 {
+    margin-right: 2rem;
+}
+
+header {
+    background-color: var(--purple);
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+header p {
+    width: 50%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+.article-container {
+    display: inline-flex;
+    width: 100%;
+}
+
+.article-left {
+    width: 40%;
+    border: 1px solid var(--dark-grey);
+    border-radius: var(--radius);
+    padding: 1rem;
+    height: fit-content;
+}
+
+.article-right {
+    width: 60%;
+    padding-left: 4rem;
+}
+
+.img-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.img-row img {
+    height: 200px;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.img-row img:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.img-text-container {
+    display: none;
+}
+
+.img-text-container h2 {
+    margin-top: 1rem;
+}
+
+.meal-plan-container {
+    display: inline-flex;
+    width: 100%;
+}
+
+.meal-plan-half {
+    width: 50%;
+}
+
+.meal-plan-meal {
+    border: 1px solid var(--dark-grey);
+    border-radius: var(--radius);
+    width: fit-content;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.meal-selected {
+    display: none;
+}
+
+.remove {
+    color: var(--red);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--purple);
+    color: var(--grey);
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.5rem;
+}
+
+/* Media queries */
+
+@media (max-width: 900px) {
+    .article-container {
+        display: block;
+    }
+
+    .article-left {
+        width: 80%;
+    }
+
+    .article-right {
+        padding-left: 0;
+        margin-top: 1rem;
+        width: 80%;
+    }
+}

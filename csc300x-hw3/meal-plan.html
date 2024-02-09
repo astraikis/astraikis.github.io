@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>On Campus Food - Meal Plan</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+        <h1>On Campus Food</h1>
+        <a href="index.html">Recommendations</a>
+    </nav>
+
+    <main>
+        <h1 class="my-4">Meal Plan</h1>
+
+        <div class="meal-plan-container">
+            <div class="meal-plan-half">
+                <h2 class="mb-2">Meals</h2>
+                
+                <!-- sushi -->
+                <div class="meal-plan-meal" id="salmon" onclick="addMeal('salmon', 4.5)">
+                    <h3>Salmon nigiri</h3>
+                    <p>$4.50</p>
+                </div>
+
+                <div class="meal-plan-meal" id="gyoza" onclick="addMeal('gyoza', 7)">
+                    <h3>Pork gyozas</h3>
+                    <p>$7</p>
+                </div>
+
+                <div class="meal-plan-meal" id="oreo" onclick="addMeal('oreo', 3.5)">
+                    <h3>Oreo tempura</h3>
+                    <p>$3.50</p>
+                </div>
+
+                <!-- pizza -->
+                <div class="meal-plan-meal" id="pizza" onclick="addMeal('pizza', 11.99)">
+                    <h3>Pepperoni pizza</h3>
+                    <p>$11.99</p>
+                </div>
+
+                <div class="meal-plan-meal" id="garlic" onclick="addMeal('garlic', 5.99)">
+                    <h3>Garlic knots</h3>
+                    <p>$5.99</p>
+                </div>
+
+                <div class="meal-plan-meal" id="nutella" onclick="addMeal('nutella', 3.99)">
+                    <h3>Nutella rolls</h3>
+                    <p>$3.99</p>
+                </div>
+
+                <!-- jimmy johns -->
+                <div class="meal-plan-meal" id="caesar" onclick="addMeal('caesar', 9.95)">
+                    <h3>Chicken caesar wrap</h3>
+                    <p>$9.95</p>
+                </div>
+
+                <div class="meal-plan-meal" id="italian" onclick="addMeal('italian', 9.75)">
+                    <h3>Spicy east coast Italian</h3>
+                    <p>$8.75</p>
+                </div>
+
+                <div class="meal-plan-meal" id="ccookie" onclick="addMeal('ccookie', 1.95)">
+                    <h3>Chocolate chip cookie</h3>
+                    <p>$1.95</p>
+                </div>
+            </div>
+            
+            <div class="meal-plan-half">
+                <h2 class="mb-2">Your plan</h2>
+                
+                <!-- sushi -->
+                <div class="meal-plan-meal meal-selected" id="salmon-selected">
+                    <h3>Salmon nigiri</h3>
+                    <p>$4.50</p>
+                    <p>Quantity: <span id="salmon-quantity">1</span></p>
+                    <button onclick="incrementQuantity('salmon', 4.5)">Add another</button>
+                    <p class="remove" onclick="removeMeal('salmon', 4.5)">Remove</p>
+                </div>
+
+                <div class="meal-plan-meal meal-selected" id="gyoza-selected">
+                    <h3>Pork gyozas</h3>
+                    <p>$7</p>
+                    <p>Quantity: <span id="gyoza-quantity">1</span></p>
+                    <button onclick="incrementQuantity('gyoza', 7)">Add another</button>
+                    <p class="remove" onclick="removeMeal('gyoza', 7)">Remove</p>
+                </div>
+
+                <div class="meal-plan-meal meal-selected" id="oreo-selected">
+                    <h3>Oreo tempura</h3>
+                    <p>$3.50</p>
+                    <p>Quantity: <span id="oreo-quantity">1</span></p>
+                    <button onclick="incrementQuantity('oreo', 3.5)">Add another</button>
+                    <p class="remove" onclick="removeMeal('oreo', 3.5)">Remove</p>
+                </div>
+
+                <!-- pizza -->
+                <div class="meal-plan-meal meal-selected" id="pizza-selected">
+                    <h3>Salmon nigiri</h3>
+                    <p>$11.99</p>
+                    <p>Quantity: <span id="pizza-quantity">1</span></p>
+                    <button onclick="incrementQuantity('pizza', 11.99)">Add another</button>
+                    <p class="remove" onclick="removeMeal('pizza', 11.99)">Remove</p>
+                </div>
+
+                <div class="meal-plan-meal meal-selected" id="garlic-selected">
+                    <h3>Garlic knots</h3>
+                    <p>$5.99</p>
+                    <p>Quantity: <span id="garlic-quantity">1</span></p>
+                    <button onclick="incrementQuantity('garlic', 5.99)">Add another</button>
+                    <p class="remove" onclick="removeMeal('garlic', 5.99)">Remove</p>
+                </div>
+
+                <div class="meal-plan-meal meal-selected" id="nutella-selected">
+                    <h3>Nutella rolls</h3>
+                    <p>$3.99</p>
+                    <p>Quantity: <span id="nutella-quantity">1</span></p>
+                    <button onclick="incrementQuantity('nutella', 3.99)">Add another</button>
+                    <p class="remove" onclick="removeMeal('nutella', 3.99)">Remove</p>
+                </div>
+
+                <!-- jimmy johns -->
+                <div class="meal-plan-meal meal-selected" id="caesar-selected">
+                    <h3>Chicken caesar wrap</h3>
+                    <p>$9.95</p>
+                    <p>Quantity: <span id="caesar-quantity">1</span></p>
+                    <button onclick="incrementQuantity('caesar', 9.95)">Add another</button>
+                    <p class="remove" onclick="removeMeal('caesar', 9.95)">Remove</p>
+                </div>
+
+                <div class="meal-plan-meal meal-selected" id="italian-selected">
+                    <h3>Spicy east coast Italian</h3>
+                    <p>$8.75</p>
+                    <p>Quantity: <span id="italian-quantity">1</span></p>
+                    <button onclick="incrementQuantity('italian', 8.75)">Add another</button>
+                    <p class="remove" onclick="removeMeal('italian', 8.75)">Remove</p>
+                </div>
+
+                <div class="meal-plan-meal meal-selected" id="ccookie-selected">
+                    <h3>Chocolate chip cookie</h3>
+                    <p>$1.95</p>
+                    <p>Quantity: <span id="nutella-quantity">1</span></p>
+                    <button onclick="incrementQuantity('ccookie', 1.95)">Add another</button>
+                    <p class="remove" onclick="removeMeal('ccookie', 1.95)">Remove</p>
+                </div>
+
+                <p>Total: $<span id="total">0</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Jackson Astraikis 2024</p>
+    </footer>
+	<script src="mealPlan.js"></script>
+  </body>
+</html>
