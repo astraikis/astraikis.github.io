@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Jackson Astraikis
+    Date: Feb 17, 2024
+    CSC 300X
+
+    Rock paper scissors game.
+ -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>Rock Paper Scissors</header>
+
+    <main>
+        <button id="reset-button">Reset</button>
+        <div id="your-hand" class="container">
+            <h2 class="container-header">Your throw</h2>
+            <div class="inner-container">
+                <p class="error hidden" id="throw-error">Please select an option before throwing.</p>
+                <img
+                    src="./images/rock.PNG"
+                    alt="Rock"
+                    class="img-container selectable-container"
+                    id="rock"
+                >
+                <img
+                    src="./images/paper.PNG"
+                    alt="Paper"
+                    class="img-container selectable-container"
+                    id="paper"
+                >
+                <img
+                    src="./images/scissors.PNG"
+                    alt="Scissors"
+                    class="img-container selectable-container"
+                    id="scissors"
+                >
+            </div>
+            <button id="throw-button">Throw!</button>
+        </div>
+
+        <div id="cpu-hand" class="container">
+            <h2 class="container-header">CPU's throw</h2>
+            <div class="inner-container">
+                <img
+                    src="./images/question-mark.PNG"
+                    alt="Question mark"
+                    class="img-container"
+                    id="cpu-image"
+                >
+            </div>
+        </div>
+
+        <div id="results" class="container">
+            <h2 class="container-header">Results</h2>
+            <div class="inner-container">
+                <h2 id="results-text"></h2>
+            </div>
+        </div>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>

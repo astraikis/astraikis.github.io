@@ -1,0 +1,123 @@
+:root {
+    --radius: 5px;
+    --black: #1c1917;
+    --grey: #d6d3d1;
+    --dark-grey: #78716c;
+    --indigo: #3730a3;
+    --red: #dc2626;
+    --green: #16a34a;
+    --border: 5px solid var(--grey);
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: var(--black);
+}
+
+header {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    padding: 0 30px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.container {
+    padding: 50px;
+    border: var(--border);
+    border-radius: var(--radius);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.inner-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.container-header {
+    margin-right: auto;
+}
+
+.img-container {
+    padding: 10px;
+    width: fit-content;
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: var(--radius);
+}
+
+.img-container:not(:last-child) {
+    margin-right: 30px;
+}
+
+.selectable-container {
+    cursor: pointer;
+}
+
+.selectable-container:hover {
+    border: var(--border);
+}
+
+.selected {
+    border: 5px solid var(--dark-grey);
+}
+
+.selected:hover {
+    border: 5px solid var(--dark-grey);
+}
+
+#throw-button {
+    border: 0px;
+    border-radius: var(--radius);
+    font-size: 17px;
+    color: white;
+    background-color: var(--indigo);
+    padding: 10px 15px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+.error {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.tie {
+    border: 5px solid var(--grey);
+}
+
+.win {
+    border: 5px solid var(--green);
+}
+
+.lose {
+    border: 5px solid var(--red);
+}
+
+#reset-button {
+    border: 0px;
+    border-radius: var(--radius);
+    font-size: 17px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
