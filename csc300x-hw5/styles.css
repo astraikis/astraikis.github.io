@@ -1,0 +1,52 @@
+/* General */
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    padding: 1rem 2rem;
+}
+
+main {
+    padding: 0 2rem;
+}
+
+/* Utility */
+
+.bold {
+    font-weight: bold;
+}
+
+/* Repos */
+
+#repos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.repo {
+    padding: 2rem;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.repo a {
+    /* color: blue; */
+    font-size: 1.5rem;
+}
+
+.repo-title svg {
+    width: 25px;
+    margin-right: 15px;
+    transform: translateY(5px);
+}
+
+.description {
+    margin: 2rem 0;
+}
