@@ -7,10 +7,9 @@ const repoDiv = document.getElementById("repos");
 const searchForm = document.getElementById("search-form");
 const currUserHeader = document.getElementById("curr-user");
 
-const myHeaders = { "Authorization": "Bearer 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"}
-
 function getRepos(username) {
-    fetch(`https://api.github.com/users/${username}/repos`, { method: "GET", headers: myHeaders })
+    // fetch(`https://api.github.com/users/${username}/repos`, { method: "GET", headers: myHeaders })
+    fetch(`https://api.github.com/users/${username}/repos`)
         .then(res => res.json())
         .then(data => {
             repos = data;
@@ -20,7 +19,8 @@ function getRepos(username) {
 }
 
 function getLanguages(url, repoName) {
-    fetch(url, { method: "GET", headers: myHeaders })
+    // fetch(url, { method: "GET", headers: myHeaders })
+    fetch(url)
         .then(res => res.json())
         .then(data => {
             const languagesArr = Object.keys(data);
