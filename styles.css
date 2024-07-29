@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+li {
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 2.75rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.grey {
+    color: grey;
+}
+
+.hidden {
+    display: none;
+}
+
+#icon, #mobile-icon {
+    border-radius: 5px;
+    width: 75px;
+}
+
+#mobile-icon {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.left {
+    width: 20%;
+}
+
+.right {
+    width: 80%;
+}
+
+#about {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#about p {
+    max-width: 500px;
+    font-size: 1.1rem;
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+}
+
+.job li {
+    max-width: 550px;
+}
+
+.mobile-job-company {
+    display: none;
+}
+
+#experience {
+    padding-bottom: 5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    color: grey;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid grey;
+}
+
+#experience h2 {
+    margin-bottom: 0.75rem;
+}
+
+#experience button {
+    margin-bottom: 2.5rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-item {
+    width: 300px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    margin: 0 1rem 1rem 0;
+}
+
+.grid-item img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#projects {
+    padding-bottom: 5rem;
+}
+
+#projects h2 {
+    margin-bottom: 2rem;
+}
+
+.grid-item-details {
+    padding: 1rem;
+}
+
+header {
+    margin-top: 2rem;
+    float: right;
+}
+
+header a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+header a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#links a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+#links a:hover {
+    color: grey;
+}
+
+#links a:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+#email {
+    color: darkgrey;
+    cursor: pointer;
+}
+
+#email:hover {
+    color: grey;
+}
+
+#email-message {
+    background-color: lightgrey;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+@media (max-width: 1250px) {
+    body {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 725px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    .grid {
+        display: block;
+    }
+
+    #about {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        width: 0%;
+    }
+
+    .job {
+        display: block;
+    }
+
+    .mobile-job-company {
+        display: block;
+    }
+
+    header {
+        margin-top: 1rem;
+    }
+
+    .job .left h3 {
+        display: none;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+
+    #projects {
+        padding-bottom: 2rem;
+    }
+
+    #about {
+        padding: 2rem 0;
+    }
+
+    #experience {
+        padding-bottom: 2rem;
+    }
+
+    #mobile-icon {
+        display: block;
+    }
+}  
