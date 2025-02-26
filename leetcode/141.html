@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" href="../prism.css">
+        <title>Leetcode 141 - Linked List Cycles Solution/Explanation</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html">astraikis.com</a>
+        </header>
+        <main>
+            <h1>141. Linked List Cycle</h1>
+
+            <a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank" rel="noopener noreferrer">Problem link</a>
+
+            <p>
+                A linked list is made up of nodes with a value and a next pointer.
+                Some also include previous pointers (<a href="https://www.geeksforgeeks.org/doubly-linked-list/">doubly linked lists</a>), 
+                but for this problem, we're just working with next pointers.
+            </p>
+
+            <p>
+                Starting at the head of the linked list, you can traverse to the tail by 
+                following the next pointers. If the linked list has a cycle, some node points 
+                back to some earlier node; you'll traverse forever.
+            </p>
+
+            <p>
+                If we didn't care about efficiency, you could just let it run for a few minutes and 
+                eventually assume looping, but we can do better than that. We can use two pointers, a 
+                fast and slow pointer, to identify a cycle. They'll both start pointing at the 
+                head of the linked list, but on each iteration, the slow pointer will move forward one node 
+                while the fast pointer moves forward two. If a cycle exists, the fast pointer will eventually
+                catch up with the slow pointer and they'll point at the same node. In an acyclic linked 
+                list this would be impossible.
+            </p>
+
+            <p>
+                The algorithm can be implemented like this:
+            </p>
+
+            <pre>
+                <code class="language-python">
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        slow = fast = head
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return True
+
+        return False
+                </code>
+            </pre>
+        </main>
+
+        <script src="../prism.js"></script>
+    </body>
+</html>
